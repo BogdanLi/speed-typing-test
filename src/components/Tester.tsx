@@ -97,6 +97,7 @@ const Tester = () => {
     setEndTime(null)
     setResult(0)
     setErrors(0)
+    setText("test text to test")
     inputRef.current?.focus()
   }
 
