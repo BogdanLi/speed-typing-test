@@ -1,4 +1,5 @@
 import { Box, Modal, SxProps, Typography } from "@mui/material";
+import { memo } from "react";
 
 interface Props {
   open: boolean,
@@ -26,4 +27,4 @@ const ResultModal = ({open, onClose, wpm, errors } : Props) => {
    );
 }
 
-export default ResultModal;
+export default memo(ResultModal);

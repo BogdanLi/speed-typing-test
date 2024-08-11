@@ -10,9 +10,14 @@ interface Props {
 
 const style: SxProps = {
   bgcolor: "slategrey",
-  width: 'fit-content',
   p: 4,
-  borderRadius: 2
+  borderRadius: 2,
+  maxHeight: 320,
+  minWidth: 240,
+  display: "grid",
+  gridTemplateColumns: "auto auto auto",
+  gap: 2,
+  overflowY: 'scroll'
 }
 
 const StatsModal = ({open, onClose} : Props) => {
